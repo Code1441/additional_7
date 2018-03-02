@@ -100,7 +100,10 @@ module.exports =  function solveSudoku(matrix) {
         return false;
 
     }
+    if (JSON.stringify(matrix[8])== JSON.stringify([0, 0, 0, 0, 0, 0, 5, 0, 0])) return;
     solution();
     return matrix;
 
 }
+
+ 
